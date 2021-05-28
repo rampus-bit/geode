@@ -1,4 +1,7 @@
 #!/bin/bash
+#Script by Alden Garcia
+#Version 1.0.0
+#https://github.com/rampus-bit
 
 # Math Variables
 random=$((1 + $RANDOM % 10))
@@ -7,7 +10,7 @@ random=$((1 + $RANDOM % 10))
 
 Host=$HOSTNAME
 User=$USER
-Terminal=$TERM_PROGRAM
+Terminal=$TERM
 Shell=
 Theme=
 WM=
@@ -27,10 +30,10 @@ fetch_opal() {
 	if [ $random == 1 ]
 	then
 		echo ${User}@${Host}
-		echo $terminal
-		echo $shell
-		echo $theme
-		echo $wm
+		echo ${Terminal}
+		echo $Shell
+		echo $Theme
+		echo $WM
 	fi
 }
 
