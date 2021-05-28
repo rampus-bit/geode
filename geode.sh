@@ -4,7 +4,7 @@
 #https://github.com/rampus-bit
 
 # Math & Color Variables
-random=$((1 + $RANDOM % 4))
+random=$((1 + $RANDOM % 3))
 
 RED="\e[31m"
 GREEN="\e[32m"
@@ -23,7 +23,6 @@ BOLD=$(tput bold)
 NORMAL=$(tput sgr0)
 
 # Generic Variables
-
 Host=$HOSTNAME
 User=$USER
 Terminal=$TERM
@@ -32,19 +31,10 @@ Shell=$SHELL
 WM=$DESKTOP_SESSION
 Memory=$(free -m | awk 'NR==2{printf "%sM / %sM \n", $3,$2,$3*100/$2 }')
 
-get_num() {
-	if [ $random == 8 ]
-	then
-		echo "poop"
-	fi
-}
-
-get_num
-
 fetch_gems() {
 	if [ $random == 1 ]
 	then
-	    echo -e "${MAGENTA}${BOLD}  ${User}@${Host}${END}${YELLOW}${BOLD}
+	    echo -e "${GREEN}${BOLD}  ${User}@${Host}${END}${YELLOW}${BOLD}
     __ _  ___ _ __ ___  ___     Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
    / _' |/ _ \ '_ ' _ \/ __|    Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
   | (_| |  __/ | | | | \__ \    Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
@@ -55,21 +45,8 @@ fetch_gems() {
 
 fetch_gems
 
-fetch_amethyst() {
-	if [ $random == 2 ]
-	then
-		echo "	${c2}  ____
-			${c2} /\__/\
-			${c2}/_/  \_\
-			${c2}\ \__/ /
-			${c2} \/__\/"
-	fi
-}
-
-fetch_amethyst
-
 fetch_ruby() {
-	if [ $random == 3 ]
+	if [ $random == 2 ]
 	then
 	    echo -e "${BLUE}${BOLD}  ${User}@${Host}${END}${RED}${BOLD}
     ____    Terminal ${END}${NORMAL}${Terminal}${RED}${BOLD}
@@ -83,7 +60,7 @@ fetch_ruby() {
 fetch_ruby
 
 fetch_topaz() {
-	if [ $random == 4 ]
+	if [ $random == 3 ]
 	then
 	    echo -e "${MAGENTA}${BOLD}  ${User}@${Host}${END}${YELLOW}${BOLD}
    ______   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
@@ -95,7 +72,3 @@ fetch_topaz() {
 }
 
 fetch_topaz
-
-echo $random
-
-# Random Number Puller
