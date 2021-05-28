@@ -41,18 +41,19 @@ get_num() {
 
 get_num
 
-fetch_opal() {
+fetch_gems() {
 	if [ $random == 1 ]
 	then
-		echo ${User}@${Host}
-		echo ${Terminal}
-		echo $Shell
-		echo $Theme
-		echo $WM
+	    echo -e "${MAGENTA}${BOLD}  ${User}@${Host}${END}${YELLOW}${BOLD}
+    __ _  ___ _ __ ___  ___     Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
+   / _' |/ _ \ '_ ' _ \/ __|    Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
+  | (_| |  __/ | | | | \__ \    Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
+   \__, |\___|_| |_| |_|___/    WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
+   |___/                        Memory ${END}${NORMAL}${Memory}${END}${NORMAl}"
 	fi
 }
 
-fetch_opal
+fetch_gems
 
 fetch_amethyst() {
 	if [ $random == 2 ]
@@ -84,11 +85,11 @@ fetch_ruby
 fetch_topaz() {
 	if [ $random == 4 ]
 	then
-	    echo -e "${BLUE}${BOLD}  ${User}@${Host}${END}${RED}${BOLD}
-   ______   Terminal ${END}${NORMAL}${Terminal}${RED}${BOLD}
-  [ \__/ ]  Shell ${END}${NORMAL}${Shell}${RED}${BOLD}
-  |_|  |_|  Theme ${END}${NORMAL}${Theme}${RED}${BOLD}
-  | |__| |  WM ${END}${NORMAL}${WM}${RED}${BOLD}
+	    echo -e "${MAGENTA}${BOLD}  ${User}@${Host}${END}${YELLOW}${BOLD}
+   ______   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
+  [ \__/ ]  Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
+  |_|  |_|  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
+  | |__| |  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
   [_/__\_]  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}"
 	fi
 }
