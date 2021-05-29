@@ -15,8 +15,9 @@ CYAN="\e[36m"
 GRAY="\e[90m"
 WHITE="\e[97m"
 
-LIGHTBLUE="\e[94m"
+LIGHTRED="\e[91m"
 LIGHTGREEN="\e[92m"
+LIGHTBLUE="\e[94m"
 
 END="\e[0m"
 
@@ -49,11 +50,11 @@ fetch_gems
 fetch_ruby() {
 	if [ $random == 2 ]
 	then
-	    echo -e "${BLUE}${BOLD} ${User}@${Host}${END}${RED}${BOLD}
-   ____    Terminal ${END}${NORMAL}${Terminal}${RED}${BOLD}
-  /\__/\\   Shell ${END}${NORMAL}${Shell}${RED}${BOLD}
- /_/  \_\\  Theme ${END}${NORMAL}${Theme}${RED}${BOLD}
- \ \__/ /  WM ${END}${NORMAL}${WM}${RED}${BOLD}
+	    echo -e "${BLUE}${BOLD} ${User}@${Host}${END}${LIGHTRED}${BOLD}
+   ____    Terminal ${END}${NORMAL}${Terminal}${LIGHTRED}${BOLD}
+  /\__/\\   Shell ${END}${NORMAL}${Shell}${LIGHTRED}${BOLD}
+ /_/  \_\\  Theme ${END}${NORMAL}${Theme}${LIGHTRED}${BOLD}
+ \ \__/ /  WM ${END}${NORMAL}${WM}${LIGHTRED}${BOLD}
   \/__\/   Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
 	fi
 }
