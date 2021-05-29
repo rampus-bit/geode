@@ -4,7 +4,7 @@
 #https://github.com/rampus-bit
 
 # Math & Color Variables
-random=$((1 + $RANDOM % 3))
+random=$((1 + $RANDOM % 4))
 
 RED="\e[31m"
 GREEN="\e[32m"
@@ -16,6 +16,7 @@ GRAY="\e[90m"
 WHITE="\e[97m"
 
 LIGHTBLUE="\e[94m"
+LIGHTGREEN="\e[92m"
 
 END="\e[0m"
 
@@ -34,12 +35,12 @@ Memory=$(free -m | awk 'NR==2{printf "%sM / %sM \n", $3,$2,$3*100/$2 }')
 fetch_gems() {
 	if [ $random == 1 ]
 	then
-	    echo -e "${GREEN}${BOLD}  ${User}@${Host}${END}${YELLOW}${BOLD}
-    __ _  ___ _ __ ___  ___     Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
-   / _' |/ _ \ '_ ' _ \/ __|    Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
-  | (_| |  __/ | | | | \__ \    Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
-   \__, |\___|_| |_| |_|___/    WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
-   |___/                        Memory ${END}${NORMAL}${Memory}${END}${NORMAl}"
+	    echo -e "${GREEN}${BOLD} ${User}@${Host}${END}${YELLOW}${BOLD}
+   __ _  ___ _ __ ___  ___   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
+  / _' |/ _ \ '_ ' _ \/ __|  Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
+ | (_| |  __/ | | | | \__ \  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
+  \__, |\___|_| |_| |_|___/  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
+  |___/                      Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
 	fi
 }
 
@@ -48,12 +49,12 @@ fetch_gems
 fetch_ruby() {
 	if [ $random == 2 ]
 	then
-	    echo -e "${BLUE}${BOLD}  ${User}@${Host}${END}${RED}${BOLD}
-    ____    Terminal ${END}${NORMAL}${Terminal}${RED}${BOLD}
-   /\__/\\   Shell ${END}${NORMAL}${Shell}${RED}${BOLD}
-  /_/  \_\\  Theme ${END}${NORMAL}${Theme}${RED}${BOLD}
-  \ \__/ /  WM ${END}${NORMAL}${WM}${RED}${BOLD}
-   \/__\/   Memory ${END}${NORMAL}${Memory}${END}${NORMAl}"
+	    echo -e "${BLUE}${BOLD} ${User}@${Host}${END}${RED}${BOLD}
+   ____    Terminal ${END}${NORMAL}${Terminal}${RED}${BOLD}
+  /\__/\\   Shell ${END}${NORMAL}${Shell}${RED}${BOLD}
+ /_/  \_\\  Theme ${END}${NORMAL}${Theme}${RED}${BOLD}
+ \ \__/ /  WM ${END}${NORMAL}${WM}${RED}${BOLD}
+  \/__\/   Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
 	fi
 }
 
@@ -62,13 +63,27 @@ fetch_ruby
 fetch_topaz() {
 	if [ $random == 3 ]
 	then
-	    echo -e "${MAGENTA}${BOLD}  ${User}@${Host}${END}${YELLOW}${BOLD}
-   ______   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
-  [ \__/ ]  Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
-  |_|  |_|  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
-  | |__| |  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
-  [_/__\_]  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}"
+	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${YELLOW}${BOLD}
+  ______   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
+ [ \__/ ]  Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
+ |_|  |_|  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
+ | |__| |  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
+ [_/__\_]  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
 	fi
 }
 
 fetch_topaz
+
+fetch_peridot() {
+	if [ $random == 4 ]
+	then
+	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${LIGHTGREEN}${BOLD}
+  ______   Terminal ${END}${NORMAL}${Terminal}${LIGHTGREEN}${BOLD}
+ /_/__\_\  Shell ${END}${NORMAL}${Shell}${LIGHTGREEN}${BOLD}
+ \ \  / /  Theme ${END}${NORMAL}${Theme}${LIGHTGREEN}${BOLD}
+  \ \/ /   WM ${END}${NORMAL}${WM}${LIGHTGREEN}${BOLD}
+   \__/    Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
+	fi
+}
+
+fetch_peridot
