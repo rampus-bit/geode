@@ -4,7 +4,7 @@
 #https://github.com/rampus-bit
 
 # Math & Color Variables
-random=$((1 + $RANDOM % 4))
+random=$((1 + $RANDOM % 5))
 
 RED="\e[31m"
 GREEN="\e[32m"
@@ -88,3 +88,17 @@ fetch_peridot() {
 }
 
 fetch_peridot
+
+fetch_sapphire() {
+	if [ $random == 5 ]
+	then
+	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${LIGHTGREEN}${BOLD}
+  ____   Terminal ${END}${NORMAL}${Terminal}${LIGHTGREEN}${BOLD}
+ //   \  Shell ${END}${NORMAL}${Shell}${LIGHTGREEN}${BOLD}
+ [|__|]  Theme ${END}${NORMAL}${Theme}${LIGHTGREEN}${BOLD}
+ [|  |]  WM ${END}${NORMAL}${WM}${LIGHTGREEN}${BOLD}
+ \___//   Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
+	fi
+}
+
+fetch_sapphire
