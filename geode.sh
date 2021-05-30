@@ -28,7 +28,7 @@ NORMAL=$(tput sgr0)
 Host=$HOSTNAME
 User=$USER
 Terminal=$TERM
-Theme="cajsh"
+Theme="eeeee"
 Shell=$SHELL
 WM=$DESKTOP_SESSION
 Memory=$(free -m | awk 'NR==2{printf "%sM / %sM \n", $3,$2,$3*100/$2 }')
@@ -92,12 +92,12 @@ fetch_peridot
 fetch_sapphire() {
 	if [ $random == 5 ]
 	then
-	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${LIGHTGREEN}${BOLD}
-  ____   Terminal ${END}${NORMAL}${Terminal}${LIGHTGREEN}${BOLD}
- //   \  Shell ${END}${NORMAL}${Shell}${LIGHTGREEN}${BOLD}
- [|__|]  Theme ${END}${NORMAL}${Theme}${LIGHTGREEN}${BOLD}
- [|  |]  WM ${END}${NORMAL}${WM}${LIGHTGREEN}${BOLD}
- \___//   Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
+	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${BLUE}${BOLD}
+  ______   Terminal ${END}${NORMAL}${Terminal}${BLUE}${BOLD}
+ //     \  Shell ${END}${NORMAL}${Shell}${BLUE}${BOLD}
+ [|____|]  Theme ${END}${NORMAL}${Theme}${BLUE}${BOLD}
+ [|    |]  WM ${END}${NORMAL}${WM}${BLUE}${BOLD}
+ \_____//  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
 	fi
 }
 
