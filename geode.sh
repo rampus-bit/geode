@@ -3,7 +3,7 @@
 #Version 1.0.0
 #https://github.com/rampus-bit
 
-# Math & Color Variables
+# General Variables
 random=$((1 + $RANDOM % 5))
 
 RED="\e[31m"
