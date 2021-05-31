@@ -7,3 +7,5 @@
 </p>
 
 ->*Note: Inspiration for this README.md was directly derived from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*<-
+
+->THIS TEXT IS IN THE CENTER!<-
