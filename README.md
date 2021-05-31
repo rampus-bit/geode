@@ -2,5 +2,5 @@
 <p align="center">💿 An aesthetically-unordered informational utility written in bash 5.1+</p>
 
 <p align="center">
-  <a href="https://img.shields.io/badge/License-MIT-blueviolet"></a>
+  <a href="https://img.shields.io/badge/License-MIT-blueviolet.svg"></a>
 </p>
