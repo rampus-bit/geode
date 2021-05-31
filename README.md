@@ -3,4 +3,5 @@
 
 <p align="center">
   <a href="https://github.com/rampus-bit/geode/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-blueviolet"></a>
+  <a href="https://github.com/rampus-bit/geode/issues"><img src="https://img.shields.io/badge/Release-v1.1.0-blueviolet"></a>
 </p>
