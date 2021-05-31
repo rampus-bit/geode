@@ -6,4 +6,4 @@
   <a href="https://github.com/rampus-bit/geode/issues"><img src="https://img.shields.io/badge/Release-v1.1.0-blueviolet"></a>
 </p>
 
-<p>*Note: Inspiration for this README.md was derived directly from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*</p>
+<p align="center">*Note: Inspiration for this README.md was derived directly from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*</p>
