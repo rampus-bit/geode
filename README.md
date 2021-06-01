@@ -7,6 +7,8 @@
 </p>
 
 Geode is a command line utility written in bash that displays more theme-based information. Similar to neofetch, or pfetch, but
-has the intent of providing information that can be re-purposed by other users.
+has the intent of providing information that can be re-purposed by other users
+
+Geode displays a number of things, which include: User terminal, shell, GTK theme, window manager, and memory usage. Above the graphic and info area, the host and user are also shown.
 
 *Note: Inspiration for this README.md was directly derived from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*
