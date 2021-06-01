@@ -13,4 +13,6 @@ Geode displays a number of things, which include: User terminal, shell, GTK them
 
 It functions by grabbing several variables, and then scanning for the output of a random number. Once the number is detected, a random graphic with a dedicated colorscheme will be printed.
 
+Geode can be customized to whatever extent, as stated in the [MIT License](https://github.com/rampus-bit/geode/blob/main/LICENSE.md), but pull requests for new graphics will have to be reviewed before implementation.
+
 *Note: Inspiration for this README.md was directly derived from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*
