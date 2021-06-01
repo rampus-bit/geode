@@ -13,6 +13,8 @@ has the intent of providing information that can be re-purposed by other users
 
 Geode displays a number of things, which include: User terminal, shell, GTK theme, window manager, and memory usage. Above the graphic and info area, the host and user are also shown.
 
+<img src="https://cdn.discordapp.com/attachments/394962023634698261/849080521308766248/topaz.png" align="right" height="150px">
+
 It functions by grabbing several variables, and then scanning for the output of a random number. Once the number is detected, a random graphic with a dedicated colorscheme will be printed.
 
 Geode can be customized to whatever extent, as stated in the [MIT License](https://github.com/rampus-bit/geode/blob/main/LICENSE.md), but pull requests for new graphics will have to be reviewed before implementation.
