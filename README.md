@@ -6,7 +6,7 @@
   <a href="https://github.com/rampus-bit/geode/issues"><img src="https://img.shields.io/badge/Release-v1.1.0-blueviolet"></a>
 </p>
 
-<img src="https://cdn.discordapp.com/attachments/394962023634698261/849079139662430239/ruby.png" align="right" height="140px">
+<img src="https://cdn.discordapp.com/attachments/394962023634698261/849079139662430239/ruby.png" align="right" height="160px">
 
 Geode is a command line utility written in bash that displays more theme-based information. Similar to neofetch, or pfetch, but
 has the intent of providing information that can be re-purposed by other users
