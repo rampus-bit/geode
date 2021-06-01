@@ -11,4 +11,6 @@ has the intent of providing information that can be re-purposed by other users
 
 Geode displays a number of things, which include: User terminal, shell, GTK theme, window manager, and memory usage. Above the graphic and info area, the host and user are also shown.
 
+It functions by grabbing several variables, and then scanning for the output of a random number. Once the number is detected, a random graphic with a dedicated colorscheme will be printed.
+
 *Note: Inspiration for this README.md was directly derived from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*
