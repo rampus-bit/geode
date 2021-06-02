@@ -20,4 +20,4 @@ It functions by grabbing several variables, and then scanning for the output of 
 Geode can be customized to whatever extent, as stated in the [MIT License](https://github.com/rampus-bit/geode/blob/main/LICENSE.md), but pull requests for new graphics will have to be reviewed before implementation.
 
 ### More: \[[Installation](https://github.com/rampus-bit/geode/wiki/Installation)\] \[[Wiki](https://github.com/rampus-bit/geode/wiki)\]
-*Note: Inspiration for this README.md was directly derved from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*
+*Note: Inspiration for this README.md was directly derived from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch).*
