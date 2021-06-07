@@ -28,7 +28,7 @@ NORMAL=$(tput sgr0)
 Host=$HOSTNAME
 User=$USER
 Terminal=$TERM
-Theme="Ant-Dracula [GTK2/3]"
+Theme=$(gsettings get org.gnome.desktop.interface gtk-theme | tr -d \'\")
 Shell=$SHELL
 WM=$DESKTOP_SESSION
 Memory=$(free -m | awk 'NR==2{printf "%sM / %sM \n", $3,$2,$3*100/$2 }')
