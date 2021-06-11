@@ -24,11 +24,13 @@ END="\e[0m"
 BOLD=$(tput bold)
 NORMAL=$(tput sgr0)
 
+# grep gtk-theme-name $HOME/.config/gtk-3.0/settings.ini | awk {'print $1'} | sed 's/gtk-theme-name=//g'
+
 # Generic Variables
 Host=$HOSTNAME
 User=$USER
 Terminal=$TERM
-Theme=$(gsettings get org.gnome.desktop.interface gtk-theme | tr -d \'\")
+Theme=$(grep gtk-theme-name $HOME/.config/gtk-3.0/settings.ini | awk {'print $1'} | sed 's/gtk-theme-name=//g')
 Shell=$SHELL
 WM=$DESKTOP_SESSION
 Memory=$(free -m | awk 'NR==2{printf "%sM / %sM \n", $3,$2,$3*100/$2 }')
@@ -78,11 +80,11 @@ fetch_topaz
 fetch_peridot() {
 	if [ $random == 4 ]
 	then
-	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${LIGHTGREEN}${BOLD}
-  ______   Terminal ${END}${NORMAL}${Terminal}${LIGHTGREEN}${BOLD}
- /_/__\_\  Shell ${END}${NORMAL}${Shell}${LIGHTGREEN}${BOLD}
- \ \  / /  Theme ${END}${NORMAL}${Theme}${LIGHTGREEN}${BOLD}
-  \ \/ /   WM ${END}${NORMAL}${WM}${LIGHTGREEN}${BOLD}
+	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${GREEN}${BOLD}
+  ______   Terminal ${END}${NORMAL}${Terminal}${GREEN}${BOLD}
+ /_/__\_\  Shell ${END}${NORMAL}${Shell}${GREEN}${BOLD}
+ \ \  / /  Theme ${END}${NORMAL}${Theme}${GREEN}${BOLD}
+  \ \/ /   WM ${END}${NORMAL}${WM}${GREEN}${BOLD}
    \__/    Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
 	fi
 }
