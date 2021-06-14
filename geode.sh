@@ -24,23 +24,22 @@ END="\e[0m"
 BOLD=$(tput bold)
 NORMAL=$(tput sgr0)
 
-# grep gtk-theme-name $HOME/.config/gtk-3.0/settings.ini | awk {'print $1'} | sed 's/gtk-theme-name=//g'
-
 # Generic Variables
 Host=$HOSTNAME
 User=$USER
 Terminal=$TERM
 Theme=$(grep gtk-theme-name $HOME/.config/gtk-3.0/settings.ini | awk {'print $1'} | sed 's/gtk-theme-name=//g')
-Shell=$SHELL
+# Shell=$SHELL
 WM=$DESKTOP_SESSION
 Memory=$(free -m | awk 'NR==2{printf "%sM / %sM \n", $3,$2,$3*100/$2 }')
+Editor=$EDITOR
 
 fetch_gems() {
 	if [ $random == 1 ]
 	then
 	    echo -e "${GREEN}${BOLD} ${User}@${Host}${END}${YELLOW}${BOLD}
    __ _  ___ _ __ ___  ___   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
-  / _' |/ _ \ '_ ' _ \/ __|  Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
+  / _' |/ _ \ '_ ' _ \/ __|  Editor ${END}${NORMAL}${Editor}${YELLOW}${BOLD}
  | (_| |  __/ | | | | \__ \  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
   \__, |\___|_| |_| |_|___/  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
   |___/                      Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
@@ -54,7 +53,7 @@ fetch_ruby() {
 	then
 	    echo -e "${BLUE}${BOLD} ${User}@${Host}${END}${LIGHTRED}${BOLD}
    ____    Terminal ${END}${NORMAL}${Terminal}${LIGHTRED}${BOLD}
-  /\__/\\   Shell ${END}${NORMAL}${Shell}${LIGHTRED}${BOLD}
+  /\__/\\   Editor ${END}${NORMAL}${Editor}${LIGHTRED}${BOLD}
  /_/  \_\\  Theme ${END}${NORMAL}${Theme}${LIGHTRED}${BOLD}
  \ \__/ /  WM ${END}${NORMAL}${WM}${LIGHTRED}${BOLD}
   \/__\/   Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
@@ -68,7 +67,7 @@ fetch_topaz() {
 	then
 	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${YELLOW}${BOLD}
   ______   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
- [ \__/ ]  Shell ${END}${NORMAL}${Shell}${YELLOW}${BOLD}
+ [ \__/ ]  Editor ${END}${NORMAL}${Editor}${YELLOW}${BOLD}
  |_|  |_|  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
  | |__| |  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
  [_/__\_]  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
@@ -82,7 +81,7 @@ fetch_peridot() {
 	then
 	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${GREEN}${BOLD}
   ______   Terminal ${END}${NORMAL}${Terminal}${GREEN}${BOLD}
- /_/__\_\  Shell ${END}${NORMAL}${Shell}${GREEN}${BOLD}
+ /_/__\_\  Editor ${END}${NORMAL}${Editor}${GREEN}${BOLD}
  \ \  / /  Theme ${END}${NORMAL}${Theme}${GREEN}${BOLD}
   \ \/ /   WM ${END}${NORMAL}${WM}${GREEN}${BOLD}
    \__/    Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
@@ -96,7 +95,7 @@ fetch_sapphire() {
 	then
 	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${BLUE}${BOLD}
   ______   Terminal ${END}${NORMAL}${Terminal}${BLUE}${BOLD}
- //     \  Shell ${END}${NORMAL}${Shell}${BLUE}${BOLD}
+ //     \  Editor ${END}${NORMAL}${Editor}${BLUE}${BOLD}
  [|____|]  Theme ${END}${NORMAL}${Theme}${BLUE}${BOLD}
  [|    |]  WM ${END}${NORMAL}${WM}${BLUE}${BOLD}
  \_____//  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
