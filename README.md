@@ -11,7 +11,7 @@
 Geode is a command line utility written in bash that displays more theme-based information. Similar to neofetch, or pfetch, but
 has the intent of providing information that can be re-purposed by other users
 
-Geode displays a number of things, which include: User terminal, shell, GTK theme, window manager, and memory usage. Above the graphic and info area, the host and user are also shown.
+Geode displays a number of things, which include: User terminal, shell / text editor, GTK theme, window manager, and memory usage. Above the graphic and info area, the host and user are also shown.
 
 <img src="https://cdn.discordapp.com/attachments/394962023634698261/849080521308766248/topaz.png" align="right" height="150px">
 
