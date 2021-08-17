@@ -15,7 +15,7 @@ Geode has the capability to display numerous things, but the default ones are li
 
 <img src="https://cdn.discordapp.com/attachments/394962023634698261/849080521308766248/topaz.png" align="right" height="150px">
 
-It functions by displaying a random graphic based off of a number. Once the number is detected, a random graphic with a dedicated colorscheme will be printed.
+It functions by grabbing several variables, while scanning for a random number. Once the number is detected, a random graphic with a dedicated colorscheme will be printed.
 
 Geode can be customized to whatever extent, as stated in the [MIT License](https://github.com/rampus-bit/geode/blob/main/LICENSE.md), but pull requests for new graphics will have to be reviewed before implementation.
 
