@@ -3,78 +3,11 @@
 #Version 1.3.0
 #https://github.com/rampus-bit
 
-source ~/geode/subscripts/vars.sh
-source ~/geode/subscripts/colors.sh
+source ~/geode/subscripts/gems.sh
 
-# General Variables
-random=$((1 + $RANDOM % 5))
-
-fetch_gems() {
-	if [ $random == 1 ]
-	then
-	    echo -e "${GREEN}${BOLD} ${User}@${Host}${END}${YELLOW}${BOLD}
-   __ _  ___ _ __ ___  ___   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
-  / _' |/ _ \ '_ ' _ \/ __|  Editor ${END}${NORMAL}${Editor}${YELLOW}${BOLD}
- | (_| |  __/ | | | | \__ \  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
-  \__, |\___|_| |_| |_|___/  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
-  |___/                      Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
-	fi
-}
-
-fetch_gems
-
-fetch_ruby() {
-	if [ $random == 2 ]
-	then
-	    echo -e "${BLUE}${BOLD} ${User}@${Host}${END}${LIGHTRED}${BOLD}
-   ____    Terminal ${END}${NORMAL}${Terminal}${LIGHTRED}${BOLD}
-  /\__/\\   Editor ${END}${NORMAL}${Editor}${LIGHTRED}${BOLD}
- /_/  \_\\  Theme ${END}${NORMAL}${Theme}${LIGHTRED}${BOLD}
- \ \__/ /  WM ${END}${NORMAL}${WM}${LIGHTRED}${BOLD}
-  \/__\/   Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
-	fi
-}
-
+# Function Calling > gems.sh
+fetch_gem
 fetch_ruby
-
-fetch_topaz() {
-	if [ $random == 3 ]
-	then
-	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${YELLOW}${BOLD}
-  ______   Terminal ${END}${NORMAL}${Terminal}${YELLOW}${BOLD}
- [ \__/ ]  Editor ${END}${NORMAL}${Editor}${YELLOW}${BOLD}
- |_|  |_|  Theme ${END}${NORMAL}${Theme}${YELLOW}${BOLD}
- | |__| |  WM ${END}${NORMAL}${WM}${YELLOW}${BOLD}
- [_/__\_]  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
-	fi
-}
-
 fetch_topaz
-
-fetch_peridot() {
-	if [ $random == 4 ]
-	then
-	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${GREEN}${BOLD}
-  ______   Terminal ${END}${NORMAL}${Terminal}${GREEN}${BOLD}
- /_/__\_\  Editor ${END}${NORMAL}${Editor}${GREEN}${BOLD}
- \ \  / /  Theme ${END}${NORMAL}${Theme}${GREEN}${BOLD}
-  \ \/ /   WM ${END}${NORMAL}${WM}${GREEN}${BOLD}
-   \__/    Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
-	fi
-}
-
 fetch_peridot
-
-fetch_sapphire() {
-	if [ $random == 5 ]
-	then
-	    echo -e "${MAGENTA}${BOLD} ${User}@${Host}${END}${BLUE}${BOLD}
-  ______   Terminal ${END}${NORMAL}${Terminal}${BLUE}${BOLD}
- //     \  Editor ${END}${NORMAL}${Editor}${BLUE}${BOLD}
- [|____|]  Theme ${END}${NORMAL}${Theme}${BLUE}${BOLD}
- [|    |]  WM ${END}${NORMAL}${WM}${BLUE}${BOLD}
- \_____//  Memory ${END}${NORMAL}${Memory}${END}${NORMAl}\n"
-	fi
-}
-
 fetch_sapphire
