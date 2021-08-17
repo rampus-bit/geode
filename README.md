@@ -13,6 +13,7 @@ has the intent of providing information that can be re-purposed by other users.
 
 Geode has the capability to display numerous things, but the default ones are listed in the provided screenshots.
 
+<br />
 <img src="https://cdn.discordapp.com/attachments/394962023634698261/849080521308766248/topaz.png" align="right" height="150px">
 
 It functions by grabbing several variables, and then scanning for the output of a random number. Once the number is detected, a random graphic with a dedicated colorscheme will be printed.
