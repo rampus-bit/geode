@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Calculation
 random=$((1 + $RANDOM % 5))
 

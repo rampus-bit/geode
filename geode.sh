@@ -1,8 +1,10 @@
 #!/bin/bash
+
 #Script by Alden Garcia
 #Version 1.3.0
 #https://github.com/rampus-bit
 
+# File Sources
 source ~/geode/subscripts/gems.sh
 
 # Function Calling > gems.sh
