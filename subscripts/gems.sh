@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # File Calls
 source ~/geode/subscripts/vars.sh
 source ~/geode/subscripts/colors.sh
