@@ -8,8 +8,8 @@
 
 <img src="https://cdn.discordapp.com/attachments/394962023634698261/849079139662430239/ruby.png" align="right" height="150px">
 
-Geode is a command line utility written in bash that displays more theme-based information. Similar to neofetch, or pfetch, but
-has the intent of providing information that can be re-purposed by other users
+Geode is a command line utility written in bash that displays theme-based information. Similar to neo, or pfetch, but
+has the intent of providing information that can be re-purposed by other users.
 
 Geode has the capability to display numerous things, but the default ones are listed in the provided screenshots.
 
@@ -20,4 +20,4 @@ It functions by grabbing several variables, and then scanning for the output of 
 Geode can be customized to whatever extent, as stated in the [MIT License](https://github.com/rampus-bit/geode/blob/main/LICENSE.md), but pull requests for new graphics will have to be reviewed before implementation.
 
 ### More: \[[Installation](https://github.com/rampus-bit/geode/wiki/Installation)\] \[[Wiki](https://github.com/rampus-bit/geode/wiki)\]
-*Note: Inspiration for this README.md was directly derived from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch). There was also some source code referencing to fetch GTK information.*
+*Note: Inspiration for this README.md was derived from [dylanaraps's neofetch](https://github.com/dylanaraps/neofetch). There was also some source code referencing to fetch GTK information.*
