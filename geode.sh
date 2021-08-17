@@ -1,38 +1,13 @@
 #!/bin/bash
 #Script by Alden Garcia
-#Version 1.0.0
+#Version 1.3.0
 #https://github.com/rampus-bit
+
+source ~/geode/subscripts/vars.sh
+source ~/geode/subscripts/colors.sh
 
 # General Variables
 random=$((1 + $RANDOM % 5))
-
-RED="\e[31m"
-GREEN="\e[32m"
-YELLOW="\e[33m"
-BLUE="\e[34m"
-MAGENTA="\e[35m"
-CYAN="\e[36m"
-GRAY="\e[90m"
-WHITE="\e[97m"
-
-LIGHTRED="\e[91m"
-LIGHTGREEN="\e[92m"
-LIGHTBLUE="\e[94m"
-
-END="\e[0m"
-
-BOLD=$(tput bold)
-NORMAL=$(tput sgr0)
-
-# Generic Variables
-Host=$HOSTNAME
-User=$USER
-Terminal=$TERM
-Theme=$(grep gtk-theme-name $HOME/.config/gtk-3.0/settings.ini | awk {'print $1'} | sed 's/gtk-theme-name=//g')
-# Shell=$SHELL
-WM=$DESKTOP_SESSION
-Memory=$(free -m | awk 'NR==2{printf "%sM / %sM \n", $3,$2,$3*100/$2 }')
-Editor=$EDITOR
 
 fetch_gems() {
 	if [ $random == 1 ]
