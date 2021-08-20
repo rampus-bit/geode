@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #Script by Alden Garcia
 #Version 1.3.0
 #https://github.com/rampus-bit
